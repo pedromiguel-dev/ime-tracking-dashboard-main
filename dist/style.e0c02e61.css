@@ -1,0 +1,172 @@
+@import url("https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500&display=swap");
+.card {
+  position: relative;
+  display: grid;
+  width: clamp(270px, 30vw, 320px);
+  border-radius: 10px;
+  isolation: isolate;
+}
+.card__decoration {
+  position: relative;
+  width: 100%;
+  height: 50px;
+  background-color: var(--Light-red-work);
+  overflow: hidden;
+  border-radius: 10px;
+}
+.card__img {
+  position: absolute;
+  top: -10px;
+  right: 10px;
+  width: 60px;
+  aspect-ratio: 1/1;
+}
+.card__info {
+  position: relative;
+  top: -15px;
+  display: flex;
+  justify-content: space-between;
+  padding: var(--min-rem);
+  align-items: center;
+  width: 100%;
+  height: 100px;
+  border-radius: 10px;
+  background-color: var(--Dark-blue);
+  overflow: hidden;
+}
+.card__wrapper {
+  display: flex;
+  flex-direction: column;
+}
+.card__wrapper h3 {
+  order: 2;
+  font-weight: 300;
+  font-size: 30px;
+}
+.card__wrapper p {
+  order: 1;
+  font-weight: 500;
+  color: white;
+  font-size: 14px;
+}
+.card__more {
+  display: flex;
+  justify-content: end;
+  align-items: end;
+  flex-direction: column;
+  gap: var(--min-rem);
+  text-align: center;
+}
+.card__btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: transparent;
+  border: none;
+  outline: none;
+  color: var(--Pale-Blue);
+  transition: 0.2s color ease-in-out;
+}
+.card__btn:hover, .card__btn:focus, .card__btn:focus-visible {
+  filter: brightness(1) contrast(3.4) saturate(9.9);
+}
+
+.perfil {
+  display: flex;
+  flex-direction: column;
+  width: clamp(270px, 30vw, 320px);
+  height: 190px;
+  background-color: var(--Dark-blue);
+  border-radius: 10px;
+  overflow: hidden;
+}
+.perfil__info {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  gap: var(--min-rem);
+  padding: var(--min-rem);
+  background-color: var(--Blue);
+  border-radius: 10px;
+}
+.perfil__wrapper {
+  display: flex;
+  flex-direction: column;
+}
+.perfil__wrapper h1 {
+  order: 2;
+  font-weight: 300;
+  font-size: 18px;
+}
+.perfil__wrapper p {
+  order: 1;
+  font-weight: 300;
+  color: var(--Pale-Blue);
+  font-size: 12px;
+}
+.perfil__img {
+  width: 90px;
+  aspect-ratio: 1/1;
+  outline: 3px solid white;
+  outline-offset: -1px;
+  border-radius: 50%;
+}
+.perfil__botoes {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: row;
+  gap: vaR(--min-rem);
+  width: 100%;
+  height: 100%;
+}
+.perfil__botao {
+  background-color: transparent;
+  border: none;
+  outline: none;
+  color: var(--Pale-Blue);
+  transition: 0.2s color ease-in-out;
+}
+.perfil__botao:hover, .perfil__botao:focus, .perfil__botao:focus-visible {
+  color: white;
+}
+
+:root {
+  --Blue: hsl(246, 80%, 60%);
+  --Light-red-work: hsl(15, 100%, 70%);
+  --Soft-blue-play: hsl(195, 74%, 62%);
+  --Light-red-study: hsl(348, 100%, 68%);
+  --Lime-green-workout: hsl(145, 58%, 55%);
+  --Violet-social: hsl(264, 64%, 52%);
+  --Soft-orange-selfcare: hsl(43, 84%, 65%);
+  --Very-dark-blue: hsl(226, 43%, 10%);
+  --Dark-blue: hsl(235, 46%, 20%);
+  --Desaturated-blue: hsl(235, 45%, 61%);
+  --Pale-Blue: hsl(236, 100%, 87%);
+  --Font-size-medium: 18px;
+  --min-rem: 1rem;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: var(--min-rem);
+  flex-wrap: wrap;
+  min-height: 100vh;
+  width: 100%;
+  background-color: var(--Very-dark-blue);
+  font-size: var(--Font-size-medium);
+  font-family: "Rubik", sans-serif;
+  font-weight: 400;
+  color: white;
+}
+
+/*# sourceMappingURL=/style.e0c02e61.css.map */
