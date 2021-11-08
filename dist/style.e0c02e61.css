@@ -126,6 +126,7 @@
   outline: none;
   color: var(--Pale-Blue);
   transition: 0.2s color ease-in-out;
+  cursor: pointer;
 }
 .perfil__botao:hover, .perfil__botao:focus, .perfil__botao:focus-visible {
   color: white;
@@ -147,7 +148,9 @@
   --min-rem: 1rem;
 }
 
-* {
+*,
+*::before,
+*::after {
   margin: 0;
   padding: 0;
   box-sizing: border-box;

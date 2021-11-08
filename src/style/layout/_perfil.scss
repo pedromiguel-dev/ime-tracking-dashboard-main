@@ -52,6 +52,7 @@
     outline: none;
     color: var(--Pale-Blue);
     transition: 0.2s color ease-in-out;
+    cursor: pointer;
     &:hover,
     &:focus,
     &:focus-visible {
